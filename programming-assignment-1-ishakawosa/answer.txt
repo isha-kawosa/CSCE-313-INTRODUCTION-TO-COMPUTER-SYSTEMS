@@ -1,0 +1,39 @@
+File Transfer Analysis:
+
+# 1 (1.csv):
+
+File Size: 284,379 bytes
+
+Buffer Size (-m) = 500
+Transfer Time: 37 milliseconds
+
+Buffer Size (-m) = 1000
+Transfer Time: 17 milliseconds
+
+Buffer Size (-m) = 2000
+Transfer Time: 12 milliseconds
+
+The experiments with "1.csv" demonstrated that varying the buffer size had an impact on transfer times for a relatively small file. 
+As expected, larger buffer sizes led to faster transfers, significantly reducing the time required to complete the process.
+
+# 2 (test1.bin):
+
+File Size: 100,000,000 bytes (100MB)
+
+Buffer Size (-m) = 500
+Transfer Time: 9,577 milliseconds (approximately 9.6 seconds)
+
+Buffer Size (-m) = 1000
+Transfer Time: 5,627 milliseconds (approximately 5.6 seconds)
+
+Buffer Size (-m) = 2000
+Transfer Time: 4,259 milliseconds (approximately 4.3 seconds)
+
+Buffer Size (-m) = 3000
+Transfer Time: 2,905 milliseconds (approximately 2.9 seconds)
+
+The experiments with "test1.bin" revealed a similar trend to those with "1.csv." Increasing the buffer size significantly reduced transfer times for the large file. 
+Also "test1.bin" takes longer time to transfer than "1.csv." because of the larger size of the file.
+
+
+The main bottleneck is the buffer size (-m).
